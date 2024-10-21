@@ -1,0 +1,78 @@
+// navbar.scss
+@use "../mixins" as *;
+
+.navbar__top-bar {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+}
+
+.navbar__bottom-bar {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+}
+
+.navbar__item {
+  opacity: 0.5;
+  transition-property: opacity;
+  transition-timing-function: linear;
+  transition-duration: 300ms;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.navbar__link {
+  position: absolute;
+  margin-inline: 4rem;
+  text-transform: capitalize;
+  font-size: 0.938235rem;
+  font-weight: 200;
+  line-height: 1.3135rem;
+
+  @media screen and (max-width: 767px) {
+    margin-inline: 0.85rem;
+  }
+
+  &--home {
+    top: 2rem;
+    left: 0;
+
+    @media screen and (max-width: 767px) {
+      top: 1.5rem;
+    }
+  }
+
+  &--reservation {
+    top: 2rem;
+    right: 0;
+
+    @media screen and (max-width: 767px) {
+      top: 1.5rem;
+    }
+  }
+
+  &--info {
+    bottom: 2rem;
+    left: 0;
+
+    @media screen and (max-width: 767px) {
+      bottom: 1.5rem;
+    }
+  }
+
+  &--contact {
+    bottom: 2rem;
+    right: 0;
+
+    @media screen and (max-width: 767px) {
+      bottom: 1.5rem;
+    }
+  }
+}

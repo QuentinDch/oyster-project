@@ -1,0 +1,9 @@
+// header.scss
+
+.header {
+  height: 100%;
+  user-select: none;
+  pointer-events: none;
+  position: relative;
+  z-index: 2;
+}

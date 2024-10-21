@@ -1,5 +1,5 @@
 // global.scss
-@import "../variables";
+@use "../variables" as *;
 
 html {
   scroll-behavior: smooth;
@@ -13,4 +13,5 @@ body {
   overscroll-behavior: none;
   color: $white-color;
   background-color: $black-color;
+  height: 100dvh;
 }

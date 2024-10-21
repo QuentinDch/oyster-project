@@ -21,8 +21,11 @@ ol {
 
 a {
   color: inherit;
-  text-decoration: inherit;
   background-color: transparent;
+  text-decoration: none;
+  pointer-events: all;
+  display: inline-block;
+  position: relative;
 }
 
 a,
