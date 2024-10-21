@@ -1,0 +1,16 @@
+// global.scss
+@import "../variables";
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  min-height: 100%;
+  overflow-y: scroll;
+  overscroll-behavior: none;
+  color: $white-color;
+  background-color: $black-color;
+}

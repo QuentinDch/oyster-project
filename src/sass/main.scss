@@ -1,0 +1,9 @@
+// main.scss
+
+@use "mixins";
+@use "reset";
+@use "utilities";
+@use "variables";
+
+@use "./components/global.scss";
+@use "./components/typography.scss";
