@@ -6,6 +6,12 @@ html {
   font-size: calc(1.38888888889 * 1vw);
 }
 
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: calc(3.12820512821 * 1vw);
+  }
+}
+
 @media screen and (max-width: 767px) {
   html {
     font-size: calc(5.12820512821 * 1vw);
@@ -36,4 +42,5 @@ h6 {
 
 p {
   overflow-wrap: break-word;
+  text-wrap: pretty;
 }

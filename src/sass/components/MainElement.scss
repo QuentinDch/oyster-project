@@ -1,12 +1,12 @@
 // mainElement.scss
 
 .main-element {
-  overflow: auto;
+  overflow: hidden;
   position: absolute;
   inset: 0;
   z-index: 1;
 }
 
-.inner {
+.main-element > .inner {
   height: 100%;
 }

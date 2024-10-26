@@ -1,7 +1,9 @@
 const Contact = () => {
   return (
     <section className="contact">
-      <h2>Contact</h2>
+      <div className="contact-title">
+        <h2>Contact</h2>
+      </div>
       <ul className="contact-list">
         <li className="contact-item">
           <div className="contact-detail">
@@ -45,7 +47,7 @@ const Contact = () => {
                 instagram
               </a>
               <a href="#" target="_blank">
-                github
+                gitHub
               </a>
             </div>
           </div>

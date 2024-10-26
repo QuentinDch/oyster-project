@@ -1,22 +1,44 @@
 // contact.scss
-@use "../mixins" as *;
 @use "../variables" as *;
 
 .contact {
   height: 100%;
-  @include flex-center-column;
   user-select: none;
 }
 
-.contact h2 {
-  font-size: 2.115rem;
+.contact-title {
+  width: 100%;
+  text-align: center;
+  margin: 6.85rem auto 3.05rem;
+
+  @media screen and (max-width: 1024px) {
+    margin: 6.85rem auto 2.75rem;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: 6.85rem auto 1.75rem;
+  }
+}
+
+.contact-title h2 {
+  font-size: 2.15rem;
   font-weight: 100;
-  margin-bottom: 3rem;
+  line-height: 2.45rem;
+
+  @media screen and (max-width: 767px) {
+    font-size: 1.45rem;
+    line-height: 0.95rem;
+  }
 }
 
 .contact-list {
-  padding-inline: 1rem;
   width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 767px) {
+    width: 75%;
+  }
 }
 
 .contact-item {
@@ -38,6 +60,10 @@
   line-height: normal;
   font-weight: 200;
   font-size: 0.75rem;
+
+  @media screen and (max-width: 767px) {
+    font-size: 0.95rem;
+  }
 }
 
 .contact-detail h3 {
@@ -45,6 +71,10 @@
   font-size: 0.938rem;
   font-weight: 300;
   text-transform: capitalize;
+
+  @media screen and (max-width: 767px) {
+    font-size: 1rem;
+  }
 }
 
 .contact-socials {
@@ -58,10 +88,19 @@
   color: $text-color;
   animation-name: blink;
   animation-play-state: running;
-  animation-duration: 1400ms;
+  animation-duration: 1200ms;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
+  position: relative;
+}
+
+.contact-socials a:last-of-type::before {
+  content: "\0a0\0a0\1F449\0a0\0a0";
+  position: absolute;
+  top: 50%;
+  left: -25%;
+  transform: translate(-50%, -50%);
 }
 
 .contact-socials a:last-of-type:hover {

@@ -63,11 +63,18 @@ select {
   text-transform: none;
 }
 
-img {
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
   max-width: 100%;
+}
+
+img {
   height: auto;
   user-select: none;
-  display: block;
 }
 
 address {
