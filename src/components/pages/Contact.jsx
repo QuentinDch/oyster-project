@@ -1,9 +1,9 @@
+import Title from "../Title";
+
 const Contact = () => {
   return (
     <section className="contact">
-      <div className="contact-title">
-        <h2>Contact</h2>
-      </div>
+      <Title title="Contact" />
       <ul className="contact-list">
         <li className="contact-item">
           <div className="contact-detail">
@@ -28,11 +28,9 @@ const Contact = () => {
           <div className="contact-detail">
             <h3>address.</h3>
             <address>
-              <p>
-                123 Royal Mile <br />
-                EH1 2QR Edinburgh <br />
-                Scotland
-              </p>
+              123 Royal Mile <br />
+              EH1 2QR Edinburgh <br />
+              Scotland
             </address>
           </div>
         </li>

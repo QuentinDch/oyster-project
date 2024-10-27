@@ -6,31 +6,6 @@
   user-select: none;
 }
 
-.contact-title {
-  width: 100%;
-  text-align: center;
-  margin: 6.85rem auto 3.05rem;
-
-  @media screen and (max-width: 1024px) {
-    margin: 6.85rem auto 2.75rem;
-  }
-
-  @media screen and (max-width: 767px) {
-    margin: 6.85rem auto 1.75rem;
-  }
-}
-
-.contact-title h2 {
-  font-size: 2.15rem;
-  font-weight: 100;
-  line-height: 2.45rem;
-
-  @media screen and (max-width: 767px) {
-    font-size: 1.45rem;
-    line-height: 0.95rem;
-  }
-}
-
 .contact-list {
   width: 50%;
   margin-left: auto;
