@@ -5,6 +5,10 @@
   position: absolute;
   inset: 0;
   z-index: 1;
+
+  @media screen and (max-width: 767px) {
+    overflow: auto;
+  }
 }
 
 .main-element > .inner {

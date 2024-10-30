@@ -33,8 +33,13 @@
   margin-inline: 4rem;
   text-transform: capitalize;
   font-size: 0.938235rem;
-  font-weight: 200;
+  font-variation-settings: "wght" 100;
+  transition: font-variation-settings 300ms linear;
   line-height: 1.3135rem;
+
+  &:hover {
+    font-variation-settings: "wght" 400;
+  }
 
   @media screen and (max-width: 1024px) {
     margin-inline: 2rem;

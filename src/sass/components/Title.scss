@@ -2,7 +2,6 @@
 
 .title-wrapper {
   width: 100%;
-  text-align: center;
   margin: 6.85rem auto 3.05rem;
 
   @media screen and (max-width: 1024px) {
@@ -18,9 +17,27 @@
   font-size: 2.15rem;
   font-weight: 100;
   line-height: 2.45rem;
+  position: relative;
+  width: max-content;
+  margin: 0 auto;
 
   @media screen and (max-width: 767px) {
     font-size: 1.45rem;
     line-height: 0.95rem;
+  }
+}
+
+.title-wrapper h2::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #fff;
+  display: block;
+  width: 75%;
+  bottom: -25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media screen and (max-width: 767px) {
+    bottom: -100%;
   }
 }
