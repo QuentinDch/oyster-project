@@ -8,9 +8,9 @@ const Contact = () => {
         <div className="contact-text">
           <p>
             Feel free to reach out to us through our contact options. We are
-            here to assist you and answer any questions you may have. Our team
-            looks forward to welcoming you and helping you with your
-            reservations.
+            here to <strong>assist</strong> you and answer any questions you may
+            have. Our team looks forward to welcoming you and helping you with
+            your <strong>reservations</strong>.
           </p>
         </div>
         <ul className="contact-list">
