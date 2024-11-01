@@ -1,0 +1,10 @@
+// lightbox.scss
+@use "../mixins" as *;
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  height: 100vh;
+  @include flex-center;
+  padding-block: 2rem;
+}
