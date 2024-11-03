@@ -54,7 +54,13 @@ const Information = () => {
           onClick={() => handleImageClick("/images/gw-bl.jpg")}
         />
       </div>
-      {lightboxSrc && <Lightbox src={lightboxSrc} onClose={closeLightbox} />}
+      {lightboxSrc && (
+        <Lightbox
+          src={lightboxSrc}
+          isOpen={!!lightboxSrc}
+          onClose={closeLightbox}
+        />
+      )}
     </section>
   );
 };

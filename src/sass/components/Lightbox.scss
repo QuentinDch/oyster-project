@@ -2,9 +2,13 @@
 @use "../mixins" as *;
 
 .lightbox {
-  position: fixed;
-  inset: 0;
-  height: 100vh;
-  @include flex-center;
-  padding-block: 2rem;
+  height: 100%;
+  margin: auto;
+  padding-block: 1rem;
+  background: transparent;
+}
+
+.lightbox::backdrop {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
 }
