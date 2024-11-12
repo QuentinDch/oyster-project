@@ -6,7 +6,7 @@ const GalleryItem = ({ src, alt, caption, onClick }) => {
       <div className="gallery-item-wrapper">
         <img src={src} alt={alt} />
       </div>
-      <figcaption className="sr-only">{caption}</figcaption>
+      <figcaption>{caption}</figcaption>
     </figure>
   );
 };

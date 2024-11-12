@@ -1,18 +1,10 @@
 import { useState } from "react";
 import Title from "../Title";
 import GalleryItem from "../GalleryItem";
-import Lightbox from "../Lightbox ";
+import Lightbox from "../Lightbox";
 
 const Information = () => {
   const [lightboxSrc, setLightboxSrc] = useState(null);
-
-  const handleImageClick = (src) => {
-    setLightboxSrc(src);
-  };
-
-  const closeLightbox = () => {
-    setLightboxSrc(null);
-  };
 
   return (
     <section className="informations">
@@ -39,26 +31,26 @@ const Information = () => {
           src="/images/kw-bl.jpg"
           alt="welcoming committee"
           caption="Welcoming Committee"
-          onClick={() => handleImageClick("/images/kw-bl.jpg")}
+          onClick={() => setLightboxSrc("/images/kw-bl.jpg")}
         />
         <GalleryItem
           src="/images/cr-bc.JPG"
           alt="inner views"
           caption="Inner Views"
-          onClick={() => handleImageClick("/images/cr-bc.JPG")}
+          onClick={() => setLightboxSrc("/images/cr-bc.JPG")}
         />
         <GalleryItem
           src="/images/gw-bl.jpg"
           alt="wines meeting"
           caption="Wines Meeting"
-          onClick={() => handleImageClick("/images/gw-bl.jpg")}
+          onClick={() => setLightboxSrc("/images/gw-bl.jpg")}
         />
       </div>
       {lightboxSrc && (
         <Lightbox
           src={lightboxSrc}
-          isOpen={!!lightboxSrc}
-          onClose={closeLightbox}
+          isOpen={lightboxSrc}
+          onClose={() => setLightboxSrc(null)}
         />
       )}
     </section>

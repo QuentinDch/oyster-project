@@ -1,4 +1,5 @@
 // informations.scss
+@use "../variables" as *;
 
 .informations {
   height: 100%;
@@ -9,6 +10,10 @@
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (max-width: 1024px) {
+    width: 80%;
+  }
 
   @media screen and (max-width: 767px) {
     width: 75%;
@@ -60,12 +65,34 @@
 }
 
 .gallery-item figcaption {
-  font-size: 0.65rem;
-  font-weight: 100;
+  font-size: 0.75rem;
+  font-weight: 200;
   line-height: normal;
+  color: $black-color;
   width: max-content;
+  position: relative;
+  overflow: hidden;
+  padding-left: 0.15rem;
+  padding-right: 0.25rem;
 
   @media screen and (max-width: 767px) {
     font-size: 0.95rem;
   }
+}
+
+.gallery-item figcaption::after {
+  content: "";
+  background-color: $white-color;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  transform: translateX(-100%);
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 350ms;
+}
+
+.gallery-item:hover figcaption::after {
+  transform: translateX(0);
 }
