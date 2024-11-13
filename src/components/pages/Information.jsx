@@ -28,22 +28,22 @@ const Information = () => {
       </div>
       <div className="informations-details gallery">
         <GalleryItem
-          src="/images/kw-bl.jpg"
+          src="/images/kw-bl.webp"
           alt="welcoming committee"
           caption="Welcoming Committee"
-          onClick={() => setLightboxSrc("/images/kw-bl.jpg")}
+          onClick={() => setLightboxSrc("/images/kw-bl.webp")}
         />
         <GalleryItem
-          src="/images/cr-bc.JPG"
+          src="/images/cr-bc.webp"
           alt="inner views"
           caption="Inner Views"
-          onClick={() => setLightboxSrc("/images/cr-bc.JPG")}
+          onClick={() => setLightboxSrc("/images/cr-bc.webp")}
         />
         <GalleryItem
-          src="/images/gw-bl.jpg"
+          src="/images/gw-bl.webp"
           alt="wines meeting"
           caption="Wines Meeting"
-          onClick={() => setLightboxSrc("/images/gw-bl.jpg")}
+          onClick={() => setLightboxSrc("/images/gw-bl.webp")}
         />
       </div>
       {lightboxSrc && (

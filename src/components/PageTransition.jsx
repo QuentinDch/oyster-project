@@ -13,11 +13,11 @@ const PageTransition = ({ children }) => {
     gsap.fromTo(
       element,
       { opacity: 0 },
-      { opacity: 1, ease: "power2.out", duration: 1 }
+      { opacity: 1, ease: "power2.out", duration: 1.5 }
     );
 
     return () => {
-      gsap.to(element, { opacity: 0, ease: "power2.in", duration: 1 });
+      gsap.to(element, { opacity: 0, ease: "power2.in", duration: 1.5 });
     };
   }, [location]);
 

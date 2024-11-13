@@ -22,7 +22,7 @@ const Reservation = () => {
           For a table of six guests & above, please kindly email{" "}
           <a
             href="mailto:hello@oysterdiscovery.co.uk"
-            aria-label="Email us at hello@oysterdiscovery.co.uk"
+            aria-label="Email us for table bookings at hello@oysterdiscovery.co.uk"
           >
             hello@oysterdiscovery.co.uk
           </a>
@@ -32,7 +32,7 @@ const Reservation = () => {
           For private hire and events, kindly email{" "}
           <a
             href="mailto:hello@oysterdiscovery.co.uk"
-            aria-label="Email us for private hire at hello@oysterdiscovery.co.uk"
+            aria-label="Email us for private hire inquiries at hello@oysterdiscovery.co.uk"
           >
             hello@oysterdiscovery.co.uk
           </a>{" "}
