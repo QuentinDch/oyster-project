@@ -1,12 +1,16 @@
 const Home = () => {
   return (
     <section className="home">
-      <div className="home-container">
+      <div className="home-brand">
         <h1>Oyster.</h1>
+      </div>
+      <div className="home-details">
         <p>
-          Restaurant, Wine Bar
-          <br />
-          and Unique
+          <em>
+            Restaurant, Wine Bar
+            <br />
+            and Unique
+          </em>
         </p>
       </div>
     </section>

@@ -1,26 +1,35 @@
+// home.scss
+@use "../mixins" as *;
+
 .home {
   height: 100%;
   position: relative;
   user-select: none;
 }
 
-.home-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+.home-brand {
+  @include absolute-center;
 }
 
-.home-container h1 {
+.home-brand h1 {
   font-size: 5rem;
   line-height: 4.69rem;
   font-weight: 500;
   letter-spacing: -0.25rem;
   margin-bottom: 2rem;
+  color: #fff;
 }
 
-.home-container p {
+.home-details {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.home-details p {
+  font-size: 0.938235rem;
   font-weight: 100;
-  line-height: normal;
+  line-height: 1.3135rem;
 }
