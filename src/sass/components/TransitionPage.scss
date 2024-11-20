@@ -1,0 +1,41 @@
+.transition-page {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  pointer-events: auto;
+  inset: 0;
+  z-index: 10;
+  visibility: visible;
+  opacity: 1;
+}
+
+.is-loading {
+  pointer-events: none;
+  visibility: hidden;
+  background-color: transparent;
+  opacity: 0;
+}
+
+.transition-page-layout {
+  width: 100vw;
+  height: 50vh;
+  position: absolute;
+  background-color: red;
+  transition: transform 400ms cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.transition-page-layout:nth-child(1) {
+  top: 0;
+}
+
+.transition-page-layout:nth-child(2) {
+  bottom: 0;
+}
+
+.transition-page-layout:nth-child(1) {
+  transform: translateY(-100%);
+}
+
+.transition-page-layout:nth-child(2) {
+  transform: translateY(100%);
+}

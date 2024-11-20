@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import PropTypes from "prop-types";
 import gsap from "gsap";
 
-const PageTransition = ({ children }) => {
+const InnerTransitionPage = ({ children }) => {
   const pageRef = useRef(null);
   const location = useLocation();
 
@@ -24,8 +24,8 @@ const PageTransition = ({ children }) => {
   return <div ref={pageRef}>{children}</div>;
 };
 
-PageTransition.propTypes = {
+InnerTransitionPage.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default PageTransition;
+export default InnerTransitionPage;

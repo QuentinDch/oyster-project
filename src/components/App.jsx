@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import "../sass/main.scss";
 import Navbar from "./Navbar";
 import MainElement from "./MainElement";
-import PageTransition from "./PageTransition";
+import InnerTransitionPage from "./InnerTransitionPage";
 import Loader from "./Loader";
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
     const handleWindowLoad = () => {
       setTimeout(() => {
         setIsLoading(false);
-      }, 3000);
+      }, 2000);
     };
 
     window.onload = handleWindowLoad;
@@ -30,11 +30,11 @@ const App = () => {
       ) : (
         <>
           <Navbar />
-          <PageTransition>
+          <InnerTransitionPage>
             <MainElement>
               <Outlet />
             </MainElement>
-          </PageTransition>
+          </InnerTransitionPage>
         </>
       )}
     </div>
