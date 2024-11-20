@@ -1,5 +1,6 @@
 // informations.scss
 @use "../variables" as *;
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 
 .informations {
   height: 100%;
@@ -36,6 +37,11 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1.2rem;
+  counter-reset: comptlist;
+}
+
+.gallery-item {
+  position: relative;
 }
 
 .gallery-item-wrapper {
@@ -45,6 +51,18 @@
   height: 0;
   padding-bottom: 70%;
   overflow: hidden;
+}
+
+.gallery-item::after {
+  content: counter(comptlist, decimal-leading-zero);
+  counter-increment: comptlist;
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateY(20%);
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.525rem;
 }
 
 .gallery-item-wrapper img {

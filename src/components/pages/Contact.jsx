@@ -12,6 +12,7 @@ const Contact = () => {
             have. Our team looks forward to welcoming you and helping you with
             your <strong>reservations</strong>.
           </p>
+          <p>say hello</p>
         </div>
         <ul className="contact-list">
           <li className="contact-item">
