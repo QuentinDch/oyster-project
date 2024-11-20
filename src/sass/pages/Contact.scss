@@ -1,6 +1,6 @@
 // contact.scss
 @use "../variables" as *;
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+@use "../components/typography" as *;
 
 .contact {
   height: 100%;
@@ -22,7 +22,7 @@
   text-transform: uppercase;
   line-height: 1;
   letter-spacing: -0.06em;
-  font-family: "Source Code Pro", monospace;
+  font-family: $font-secondary;
   position: relative;
 }
 

@@ -1,6 +1,6 @@
 // informations.scss
 @use "../variables" as *;
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+@use "../components/typography" as *;
 
 .informations {
   height: 100%;
@@ -61,7 +61,7 @@
   right: 0;
   bottom: 0;
   transform: translateY(20%);
-  font-family: "Source Code Pro", monospace;
+  font-family: $font-secondary;
   font-size: 0.525rem;
 }
 
