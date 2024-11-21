@@ -28,19 +28,19 @@ const Information = () => {
       </div>
       <div className="informations-details gallery">
         <GalleryItem
-          src="/images/kw-bl.webp"
+          src="/images/sm-kw-bl.webp"
           alt="welcoming committee"
           caption="Welcoming Committee"
           onClick={() => setLightboxSrc("/images/kw-bl.webp")}
         />
         <GalleryItem
-          src="/images/cr-bc.webp"
+          src="/images/sm-cr-bc.webp"
           alt="inner views"
           caption="Inner Views"
           onClick={() => setLightboxSrc("/images/cr-bc.webp")}
         />
         <GalleryItem
-          src="/images/gw-bl.webp"
+          src="/images/sm-gw-bl.webp"
           alt="wines meeting"
           caption="Wines Meeting"
           onClick={() => setLightboxSrc("/images/gw-bl.webp")}
