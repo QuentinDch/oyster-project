@@ -1,3 +1,6 @@
+// transitionPage.scss
+@use "../variables" as *;
+
 .transition-page {
   width: 100vw;
   height: 100vh;
@@ -7,9 +10,10 @@
   z-index: 10;
   visibility: visible;
   opacity: 1;
+  transition: opacity 300ms ease;
 }
 
-.is-loading {
+.transition-page.is-loading {
   pointer-events: none;
   visibility: hidden;
   background-color: transparent;
@@ -20,8 +24,9 @@
   width: 100vw;
   height: 50vh;
   position: absolute;
-  background-color: red;
+  background-color: $white-color;
   transition: transform 400ms cubic-bezier(0.76, 0, 0.24, 1);
+  transform: translateY(0);
 }
 
 .transition-page-layout:nth-child(1) {
@@ -32,10 +37,10 @@
   bottom: 0;
 }
 
-.transition-page-layout:nth-child(1) {
+.start-animation .transition-page-layout:nth-child(1) {
   transform: translateY(-100%);
 }
 
-.transition-page-layout:nth-child(2) {
+.start-animation .transition-page-layout:nth-child(2) {
   transform: translateY(100%);
 }

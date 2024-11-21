@@ -7,13 +7,13 @@
   inset: 0;
   width: 100vw;
   height: 100vh;
-  background-color: $black-color;
+  background-color: $white-color;
   z-index: 99999;
-  color: $white-color;
+  color: $black-color;
   font-size: 120px;
   @include flex-center-column;
   user-select: none;
-  transition: opacity 500ms ease, visibility 0s ease 500ms;
+  transition: opacity 400ms ease, visibility 0s ease 400ms;
 }
 
 .is-hide {
@@ -25,9 +25,9 @@
 
 .styles-loader-text {
   font-size: 1rem;
-  color: $white-color;
+  color: $black-color;
   text-transform: capitalize;
-  font-weight: 200;
+  font-weight: 400;
   @include absolute-center;
   text-align: center;
   min-width: 100px;

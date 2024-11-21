@@ -5,14 +5,17 @@ import Navbar from "./Navbar";
 import MainElement from "./MainElement";
 import InnerTransitionPage from "./InnerTransitionPage";
 import Loader from "./Loader";
+import TransitionPage from "./TransitionPage";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   useEffect(() => {
     const handleWindowLoad = () => {
       setTimeout(() => {
         setIsLoading(false);
+        setTimeout(() => setIsTransitioning(true));
       }, 2000);
     };
 
@@ -30,6 +33,7 @@ const App = () => {
       ) : (
         <>
           <Navbar />
+          <TransitionPage isTransitioning={isTransitioning} />
           <InnerTransitionPage>
             <MainElement>
               <Outlet />
