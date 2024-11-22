@@ -6,6 +6,10 @@
   margin: auto;
   padding-block: 1rem;
   background: transparent;
+
+  @media screen and (max-width: 767px) {
+    height: 70%;
+  }
 }
 
 .lightbox::backdrop {

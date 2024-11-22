@@ -26,6 +26,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+
+  @media screen and (max-width: 767px) {
+    bottom: 25%;
+  }
 }
 
 .home-details p {

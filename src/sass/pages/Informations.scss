@@ -38,6 +38,12 @@
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1.2rem;
   counter-reset: comptlist;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
 }
 
 .gallery-item {
