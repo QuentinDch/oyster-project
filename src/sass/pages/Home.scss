@@ -5,6 +5,9 @@
   height: 100%;
   position: relative;
   user-select: none;
+  @media screen and (max-width: 767px) {
+    user-select: auto;
+  }
 }
 
 .home-brand {

@@ -5,6 +5,9 @@
 .contact {
   height: 100%;
   user-select: none;
+  @media screen and (max-width: 767px) {
+    user-select: auto;
+  }
 }
 
 .contact-text {

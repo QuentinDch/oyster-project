@@ -6,13 +6,12 @@
   position: fixed;
   inset: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   background-color: $white-color;
   z-index: 99999;
   color: $black-color;
   font-size: 120px;
   @include flex-center-column;
-  user-select: none;
   transition: opacity 400ms ease, visibility 0s ease 400ms;
 }
 
