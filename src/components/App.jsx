@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import "../sass/main.scss";
 import Navbar from "./Navbar";
 import MainElement from "./MainElement";
@@ -42,6 +43,9 @@ const App = () => {
         <Loader isLoading={isLoading} />
       ) : (
         <>
+          <Helmet>
+            <title>Oyster. | Edinburgh</title>
+          </Helmet>
           <Navbar />
           <TransitionPage isTransitioning={isTransitioning} />
           <InnerTransitionPage>
