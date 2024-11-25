@@ -19,12 +19,22 @@ const App = () => {
       }, 2000);
     };
 
-    window.onload = handleWindowLoad;
+    const handleLoadEvent = () => {
+      if (isLoading) {
+        handleWindowLoad();
+      }
+    };
+
+    if (document.readyState === "complete") {
+      handleLoadEvent();
+    } else {
+      window.addEventListener("load", handleLoadEvent);
+    }
 
     return () => {
-      window.onload = null;
+      window.removeEventListener("load", handleLoadEvent);
     };
-  }, []);
+  }, [isLoading]);
 
   return (
     <div className="app">
