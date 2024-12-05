@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "vercel-build": "npm run build",
+    "vercel-deploy": "vercel",
+    "vercel-deploy-prod": "vercel --prod"
   },
   "dependencies": {
     "gsap": "^3.12.5",
@@ -28,6 +31,7 @@
     "eslint-plugin-react-refresh": "^0.4.12",
     "globals": "^15.9.0",
     "sass": "^1.80.3",
+    "vercel": "^32.3.0",
     "vite": "^5.4.8"
   }
 }
