@@ -59,7 +59,10 @@ const Contact = () => {
                   <a href="https://www.instagram.com/" target="_blank">
                     instagram
                   </a>
-                  <a href="#" target="_blank">
+                  <a
+                    href="https://github.com/QuentinDch/oyster-project"
+                    target="_blank"
+                  >
                     gitHub
                   </a>
                 </div>
